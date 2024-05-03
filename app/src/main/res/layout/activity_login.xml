@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    tools:layout_editor_absoluteX="-46dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homapsge1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/kurale"
+        android:text="Sign-In"
+        android:textColor="#FFFF"
+
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtusername"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/sha"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="@font/kurale"
+        android:hint="Your email"
+        android:inputType="text"
+        android:padding="12dp"
+        android:shadowDy="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/sha"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="@font/kurale"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:shadowDy="4"
+        app:layout_constraintEnd_toEndOf="@+id/edtusername"
+        app:layout_constraintStart_toStartOf="@+id/edtusername"
+        app:layout_constraintTop_toBottomOf="@+id/edtusername" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kurale"
+        android:text="Did you forgot your password ?"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/edtpassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtpassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtpassword" />
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#312222"
+        android:fontFamily="@font/kurale"
+        android:text="Log-In"
+        android:textSize="20sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FF0000"
+        android:fontFamily="@font/kurale"
+        android:text="Sign-Up"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/kurale"
+        android:backgroundTint="#FAF4F4"
+        android:text="Google"
+        android:drawableLeft="@drawable/google"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="15dp"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtpassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
